@@ -1,14 +1,3 @@
-/* Reset styles */
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 h1,
 h2,
 h3,
@@ -19,10 +8,11 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 a {
@@ -32,6 +22,11 @@ a {
 
 button {
   cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  color: currentColor;
 }
 
 img {
@@ -40,6 +35,21 @@ img {
   height: auto;
 }
 
-address {
-  font-style: normal;
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

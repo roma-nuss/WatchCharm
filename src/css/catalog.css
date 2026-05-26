@@ -1,0 +1,129 @@
+.catalog {
+  padding: 60px 0;
+}
+
+.catalog-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+}
+
+.catalog-item:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 8px;
+}
+
+.catalog-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+}
+
+.catalog-img {
+  width: 279px;
+  height: 262px;
+  margin-bottom: 10px;
+}
+
+.catalog-btn {
+  display: block;
+  background-color: #3350e9;
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hidden {
+    display: none;
+  }
+
+  .min-photo {
+    width: 222px;
+    margin: 0 auto 10px auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catalog {
+    padding: 80px 0;
+  }
+
+  .catalog-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+  }
+
+  .catalog-item {
+    flex-basis: calc((100% - 16px) / 2);
+    padding: 24px 32px;
+    margin-bottom: 0;
+  }
+
+  .catalog-img {
+    width: 280px;
+    height: 312px;
+  }
+
+  .catalog-name {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .catalog-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .catalog {
+    padding: 100px 0;
+  }
+
+  .catalog-item {
+    flex-basis: calc((100% - 46px) / 3);
+  }
+
+  .catalog-img {
+    width: 304px;
+    height: 312px;
+  }
+}

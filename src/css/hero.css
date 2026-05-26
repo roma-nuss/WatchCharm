@@ -1,0 +1,179 @@
+.hero {
+  padding: 60px 0;
+}
+
+.hero-wrapper {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+}
+
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero-list {
+  position: relative;
+  width: 108px;
+  height: 44px;
+}
+
+.hero-list-item {
+  position: absolute;
+  top: 0;
+}
+
+.hero-list-item:nth-child(2) {
+  left: 32px;
+}
+
+.hero-list-item:nth-child(3) {
+  left: 64px;
+}
+
+.hero-team-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  border: 2px solid #fbfbfb;
+  background-color: #f3f3f3;
+}
+
+.hero-scroll-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #0c0c0c;
+}
+
+.hero-watch-img {
+  border-radius: 30px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero-content {
+    min-width: 557px;
+  }
+
+  .hero-title {
+    font-size: 70px;
+    line-height: 0.86;
+  }
+
+  .hero-text {
+    max-width: 480px;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 0;
+  }
+
+  .hero-box {
+    flex-direction: column;
+  }
+
+  .hero-list {
+    width: 136px;
+    height: 60px;
+  }
+
+  .hero-list-item:nth-child(2) {
+    left: 41px;
+  }
+
+  .hero-list-item:nth-child(3) {
+    left: 80px;
+  }
+
+  .hero-scroll-link {
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  .hero-team-img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hero-watch-img {
+    border-radius: 50px;
+    width: 704px;
+    height: 520px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 72px;
+    line-height: 0.88;
+  }
+
+  .hero-content {
+    max-width: 597px;
+  }
+
+  .hero-text {
+    max-width: 480px;
+  }
+
+  .hero-list {
+    width: 146px;
+  }
+
+  .hero-list-item:nth-child(2) {
+    left: 44px;
+  }
+
+  .hero-list-item:nth-child(3) {
+    left: 86px;
+  }
+
+  .hero-team-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero-watch-img {
+    width: 1150px;
+    height: 500px;
+  }
+}

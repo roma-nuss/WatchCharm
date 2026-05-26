@@ -1,0 +1,104 @@
+<section class="contact-us">
+  <div class="container">
+    <h2 class="contact-us-title">Contact Us</h2>
+
+    <div class="contact-us-box">
+      <div class="contact-us-form-wrapper">
+        <p class="contact-us-description">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+
+        <form class="contact-us-form">
+          <div class="contact-us-fields">
+            <div class="contact-us-field-wrap">
+              <label for="user-name">
+                <input
+                  class="contact-us-input"
+                  name="user-name"
+                  type="text"
+                  id="user-name"
+                  placeholder="Name"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="contact-us-input-wrap">
+              <label class="contact-us-label" for="user-email">
+                <input
+                  class="contact-us-input"
+                  name="user-email"
+                  type="email"
+                  id="user-email"
+                  placeholder="Email"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="contact-us-input-wrap">
+              <label class="contact-us-label" for="user-phone">
+                <input
+                  class="contact-us-input"
+                  name="user-phone"
+                  type="tel"
+                  id="user-phone"
+                  placeholder="+380"
+                  pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="contact-us-input-wrap contact-us-textarea-wrap">
+              <label for="user-comment" class="contact-us-label">
+                <textarea
+                  class="contact-us-textarea"
+                  name="user-comment"
+                  id="user-comment"
+                  placeholder="Comment"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+          <button class="contact-us-btn" type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="contact-us-img">
+        <picture>
+          <source
+            srcset="
+              ./img/contact-us/contact-us-desk.jpg    1x,
+              ./img/contact-us/contact-us-desk-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/contact-us/contact-us-tab.jpg    1x,
+              ./img/contact-us/contact-us-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/contact-us/contact-us-mob.jpg    1x,
+              ./img/contact-us/contact-us-mob-2x.jpg 2x
+            "
+            media="(min-width: 375px)"
+          />
+          <img
+            class="contact-img"
+            src="./img/contact-us/contact-us-desk.jpg"
+            alt="Watch"
+            width="704"
+            height="556"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>

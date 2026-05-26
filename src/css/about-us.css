@@ -1,0 +1,113 @@
+.about-us {
+  padding: 60px 0;
+}
+
+.about-us-content {
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+}
+
+.about-us-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.about-us-text-top,
+.about-us-text-down {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+}
+
+.about-us-text-top {
+  margin-top: 28px;
+}
+
+.about-us-text-down {
+  margin-top: 20px;
+}
+
+.about-us-btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  border-radius: 16px;
+  padding: 15px 38px;
+  min-width: 160px;
+  background-color: #3350e9;
+  margin-top: 40px;
+}
+
+.about-us-img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding: 80px 0;
+  }
+
+  .about-us-content {
+    padding: 80px 60px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+  }
+
+  .about-us-title {
+    font-size: 48px;
+  }
+
+  .about-us-img {
+    border-radius: 50px;
+    width: 704px;
+    height: 512px;
+  }
+
+  .about-us-text-top,
+  .about-us-text-down {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .about-us-text-top {
+    margin-top: 40px;
+  }
+
+  .about-us-btn {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us-container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .about-us-content {
+    width: 580px;
+    height: 532px;
+  }
+
+  .about-us {
+    padding: 100px 0;
+  }
+  .about-us-img {
+    width: 530px;
+    height: 532px;
+  }
+
+  .about-us-btn {
+    margin-top: 40px;
+  }
+}
